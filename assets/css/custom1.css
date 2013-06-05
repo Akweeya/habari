@@ -1,0 +1,69 @@
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	line-height: 20px;
+	color: #333;
+	background-color: #000;
+	background-image: url('../img/bg_honeycomb.png');
+	/*z-index: 0;
+	position:absolute;*/
+}
+
+.trans {
+	opacity:0.1;
+    filter:alpha(opacity=10); /* For IE8 and earlier */
+}
+
+#header {
+	width:100%;
+	height: 100px;
+	background-color: #bebebe;
+    /*color: #fff;*/
+}
+
+#middle {
+	width:1300px;
+	height: 610px;
+	background-color: #bebebe;
+    /*color: #fff;*/
+    margin:10px auto 0px auto;
+}
+
+#footer {
+	width:100%;
+	height: 50px;
+	background-color: #bebebe;
+    /*color: #fff;*/
+    margin-top:10px;
+}
+
+#overlayer {
+	width: 100px;
+	position:absolute;
+	left:0px;
+    top:0px;
+	z-index: -2;
+	color:#fefefe;
+}
+
