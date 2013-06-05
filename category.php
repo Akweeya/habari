@@ -13,8 +13,14 @@
 					<div class="articleimg">
 						<img src="assets/img/cats/samsung_galaxy_note___phone___tablet-wallpaper-1366x768.jpg" width="350px" />
 					</div>
-					<div class="articlehead"></div>
+					<div class="articlehead">
+						<div class="articletitle">Elections are Here</div>
+						<div class="articlesource">Capital FM, Kenya</div>
+						<div class="articlesubscribe">Subscribe</div>
+						<div class="articletime">1 hour ago</div>
+					</div>
 					<div class="articletext">people insist they want to see news text, finish reading this before they realise I said nothing. By they I mean you.</div>
+					<div class="articlereadmore">Read more</div>
 				</div>
 				<div class="article">
 					<div class="articleimg">
@@ -38,9 +44,15 @@
 			<div id="col2">
 				<div class="article">
 					<div class="articleimg">
-						<img src="assets/img/cats/windows_8_green_2-wallpaper-1366x768.jpg" width="350px" />
 					</div>
-					<div class="articletext"><span>people insist they want to see news text,</span> so they will finish reading this before they realise I said nothing. By they I mean you.</div>
+					<div class="articlehead">
+						<div class="articletitle">Elections are Here</div>
+						<div class="articlesource">Capital FM, Kenya</div>
+						<div class="articlesubscribe">Subscribe</div>
+						<div class="articletime">1 hour ago</div>
+					</div>
+					<div class="articletext">people insist they want to see news text, finish reading this before they realise I said nothing. By they I mean you.</div>
+					<div class="articlereadmore">Read more</div>
 				</div>
 				<div class="article">
 					<div class="articleimg">

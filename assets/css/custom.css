@@ -231,9 +231,14 @@ body {
 	/*background-color:#FFc700;*/
 }
 
+.article:hover {
+	border-top: 3px solid #FF9400;
+	border-bottom: 3px solid #FF9400;
+}
+
 .articleimg {
 	width:100%;
-	min-height:50px;
+	cursor: pointer;
 	/*border-top:1px solid #dedede;
 	background-color:#000000;
 	opacity: 0.5;
@@ -243,29 +248,58 @@ body {
 	z-index: 5;*/
 }
 
+.articleimg img:hover {
+	opacity: 0.5;
+}
+
 .articlehead {
-	
+	margin-top: 5px;
+	cursor: pointer;
 }
 
 .articletitle {
-	
+	font-weight: bold;
+ 	font-size:18px;
+ 	padding: 2px 5px;
+ 	cursor: pointer;
 }
 
 .articlesource {
-	
+	font-weight: 200;
+ 	font-size:14px;
+ 	padding: 2px 5px;
+ 	color: #aeaeae;
+ 	float:left;
 }
 
 .articlesubscribe {
-	
+	border:1px solid #dedede;
+	color: blue;
+	padding: 10px;
+	float:right;
+	border-radius: 10px;
+	margin-right: 10px;
+	line-height: 10px;
+	cursor: pointer;
 }
 
 .articletime {
-	
+	clear: both;
+	margin-left: 5px;
 }
 
 .articletext {
 	padding:5px;
 	
+}
+
+.articlereadmore {
+	color: blue;
+	padding: 5px;
+	border-radius: 10px;
+	line-height: 10px;
+	margin: 0 0 5px 260px;
+	cursor: pointer;
 }
 
 
