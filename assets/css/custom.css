@@ -264,6 +264,10 @@ body {
  	cursor: pointer;
 }
 
+.articletitle:hover {
+	color:#aeaeae;
+}
+
 .articlesource {
 	font-weight: 200;
  	font-size:14px;
@@ -336,4 +340,41 @@ body {
 }
 */
 
-.
+.articleparticular {
+	width: 1030px;
+	min-height:200px;
+	margin: 0 0 15px 5px;
+	box-shadow: 5px 5px 5px -3px #888888;
+	border-radius: 10px;
+	padding: 10px 15px;
+	float:left;
+}
+
+.articleparticular:hover {
+	/*background-color: #f7f7f7;*/
+}
+
+.articleparticular img {
+	width:400px;
+	border: 1px solid #dedede;
+	display:block;
+	float:left;
+	margin: 12px 0 0 0;
+}
+
+.articleparticular .articlehead{
+	float: right;
+	width:600px;
+}
+
+.articleparticular .articletext {
+	display:block;
+	float:right;
+	width: 600px;
+}
+
+.articleparticular .articlereadmore {
+	float:right;
+	padding-right: 20px;
+	clear:both;
+}
