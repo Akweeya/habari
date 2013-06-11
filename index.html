@@ -4,6 +4,7 @@
 	<head>
 		<title>Home Page</title>
 		<link rel="stylesheet" type="text/css" href="css/reset.css">
+		<link rel="stylesheet" type="text/css" href="assets/FortAwesome/css/font-awesome-ie7.min.css" />
 		<link rel="stylesheet" type="text/css" href="css/habari.css">
 		<link rel="stylesheet" href="themes/base/jquery.ui.all.css">
 		<script src="js/jquery-1.8.3.js"></script>
@@ -19,14 +20,15 @@
 				$("#sform").dialog({
 					autoOpen : false,
 					height : 370,
-					width : 300,
+					width : 310,
 					modal : true,
 
 				});
 				
 				
 				$("#sign_up").click(function() {
-					$("#sform").dialog("open")
+					$("#sform").dialog("open");
+					$("#ui-id-1").html("Sign Up for Habari");
 				})
 			})
 			
@@ -35,15 +37,16 @@
 
 				$("#lform").dialog({
 					autoOpen : false,
-					height : 370,
-					width : 300,
+					height : 300,
+					width : 310,
 					modal : true,
 
 				});
 				
 				
 				$("#log_in").click(function() {
-					$("#lform").dialog("open")
+					$("#lform").dialog("open");
+					$("#ui-id-2").html("Login to Habari");
 				})
 			})
 		</script>
@@ -87,9 +90,10 @@
 			<div id="left">
 				<img style="margin-left: 30px;" src="img/Hab.png" />
 				<p>
-					Fries is an awesome mobile development framework for Android apps using just HTML, CSS, and
-					Javascript and was inspired by Ratchet. We all know that you can find loads of iOS development tools out
-					there, so this give some love to Android. Surprisingly, Fries works well with PhoneGap.
+					We search the web for specifically African news and content, we curate
+					and put in one place with a web and mobile platform, so you can read all the news that 
+					interests you and even discover new content on the go.
+					<br />Be our guest, we are Habari. 
 
 				</p>
 
@@ -116,22 +120,27 @@
 				<table style="margin: auto;">
 					<tr>
 						<td>
-						<input  type="text" id="user" placeholder="Username">
+						<input  type="text" id="user" placeholder="Username" class="myinput">
 						</td>
 					</tr>
 					<tr>
 						<td>
-						<input  type="text" id="mail" placeholder="Email">
+						<input  type="text" id="mail" placeholder="Email" class="myinput">
 						</td>
 					</tr>
 					<tr>
 						<td>
-						<input  type="text" id="pwd" placeholder="Password">
+						<input  type="password" id="pwd" placeholder="Password" class="myinput">
 						</td>
 					</tr>
 					<tr>
 						<td>
-						<button id="sign">
+						<input  type="password" id="v_pass" placeholder="Verify Password" class="myinput">
+						</td>
+					</tr>
+					<tr>
+						<td>
+						<button id="sign"  class="myinput">
 							Sign Up!
 						</button></td>
 					</tr>
@@ -144,27 +153,30 @@
 				<table style="margin: auto;">
 					<tr>
 						<td>
-						<input  type="text" id="name" placeholder="Username">
+						<input  type="text" id="name" placeholder="Username" class="myinput">
 						</td>
 					</tr>
 					
 					<tr>
 						<td>
-						<input  type="text" id="pass" placeholder="Password">
+						<input  type="text" id="pass" placeholder="Password" class="myinput">
 						</td>
 					</tr>
 					<tr>
 						<td>
-						<input  type="text" id="v_pass" placeholder="Verify Password">
+						<input  type="password" id="v_pass" placeholder="Verify Password" class="myinput">
 						</td>
 					</tr>
 					<tr>
 						<td>
-						<button id="log">
+						<button id="log"  class="myinput">
 							Login
 						</button></td>
 					</tr>
 				</table>
+				<div id="fblog" class="soclog">Facebook</div>
+				<div id="twlog" class="soclog">Twitter</div>
+				<div id="lnlog" class="soclog">Linkedin</div>
 			</div>
 		</div>
 

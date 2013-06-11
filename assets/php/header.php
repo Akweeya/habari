@@ -8,7 +8,7 @@ echo '<!doctype html>
 		    <link href="assets/css/custom.css" rel="stylesheet"/> 
 		    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.0/jquery.min.js"></script>
 		</head>
-		<body onload="prettyPrint()" data-twttr-rendered="true">
+		<body onload="prettyPrint(); view = 2;" data-twttr-rendered="true">
 		<!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
 		
 		<div id="mynavbar">

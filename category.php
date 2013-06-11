@@ -9,24 +9,31 @@
 		</div>
 		<div id="holdcats" class="container">
 			<div id="col1">
-				<div class="article">
+				<div class="article"><!--http://www.vanguardngr.com/2013/06/constitution-review-report-six-year-single-term-for-presidents-govs/-->
 					<div class="articleimg">
-						<img src="assets/img/cats/samsung_galaxy_note___phone___tablet-wallpaper-1366x768.jpg" width="350px" />
+						<img src="assets/img/cats/art2.jpg" width="350px" />
 					</div>
 					<div class="articlehead">
-						<div class="articletitle">Elections are Here</div>
-						<div class="articlesource">Capital FM, Kenya</div>
+						<div class="articletitle">Constitution Review report: Six-year single term for Presidents, Govs</div>
+						<div class="articlesource">Vanguard New, Nigeria</div>
 						<div class="articlesubscribe">Subscribe</div>
-						<div class="articletime">1 hour ago</div>
+						<div class="articletime">on June 6, 2013.</div>
 					</div>
-					<div class="articletext">people insist they want to see news text, finish reading this before they realise I said nothing. By they I mean you.</div>
+					<div class="articletext">ABUJA - The Senate Committee on the review of the constitution has recommended a single term of six years for President and Governors because of the financial expenses often associated with re-election as well as to ensure that executive heads are freed from distractions...</div>
 					<div class="articlereadmore">Read more</div>
 				</div>
 				<div class="article">
 					<div class="articleimg">
-						<img src="assets/img/cats/red_line-wallpaper-960x600.jpg" width="350px" />
+						<img src="assets/img/cats/art3.jpg" width="350px" />
 					</div>
-					<div class="articletext"><span>people insist they want to see news text,</span> so they will finish reading this before they realise I said nothing. By they I mean you.</div>
+					<div class="articlehead">
+						<div class="articletitle">Senate stops N4bn first ladies' mission house project</div>
+						<div class="articlesource">PUNCH, Nigeria</div>
+						<div class="articlesubscribe">Subscribe</div>
+						<div class="articletime">on June 6, 2013.</div>
+					</div>
+					<div class="articletext">The Senate on Wednesday dropped the controversial African First Ladies' Peace Mission House project when it passed the N259.65bn budget of the Federal Capital Territory for the 2013 fiscal year without approving the N4bn appropriated for it...</div>
+					<div class="articlereadmore">Read more</div>
 				</div>
 				<div class="article">
 					<div class="articleimg">
@@ -42,16 +49,19 @@
 				</div>
 			</div>
 			<div id="col2">
-				<div class="article">
+				<div class="article"><!--http://www.guardian.co.uk/world/2013/jun/06/uk-compensate-kenya-mau-mau-torture-->
 					<div class="articleimg">
 					</div>
-					<div class="articlehead">
-						<div class="articletitle">Elections are Here</div>
-						<div class="articlesource">Capital FM, Kenya</div>
-						<div class="articlesubscribe">Subscribe</div>
-						<div class="articletime">1 hour ago</div>
+					<div class="articleimg">
+						<img src="assets/img/cats/art4.jpg" width="350px" />
 					</div>
-					<div class="articletext">people insist they want to see news text, finish reading this before they realise I said nothing. By they I mean you.</div>
+					<div class="articlehead">
+						<div class="articletitle">UK to compensate Kenya's Mau Mau torture victims</div>
+						<div class="articlesource">The Guardian, UK</div>
+						<div class="articlesubscribe">Subscribe</div>
+						<div class="articletime">on June 6, 2013.</div>
+					</div>
+					<div class="articletext">William Hague says payments totalling £19.9m represent 'full and final settlement' of action brought by five victims of torture. William Hague makes a statement in the House of Commons, London, setting out plans to compensate elderly Kenyans tortured during the Mau Mau uprising...</div>
 					<div class="articlereadmore">Read more</div>
 				</div>
 				<div class="article">
