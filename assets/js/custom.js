@@ -43,7 +43,7 @@ function showstories(){
 
 function getdashboard(){
 	view = 2;
-	$('#holdcats.container').html('<div id="one"></div><div id="col1"></div><div id="col2"></div><div id="col3"></div>');
+	$('#holdcats.container').html('<div id="one"></div><div id="col1"></div><div id="col2"></div><div id="col3"></div><div id="hider"></div>');
 	for(var i=0;i<selectedCat.length;i++){
 		if(selectedCat[i]){
 			for(var j=0; j<3; j++){
@@ -54,12 +54,33 @@ function getdashboard(){
 	showstories();
 }
 
+/*<div class="articleparticular">
+				<img src="assets/img/cats/architectural_concept_28-wallpaper-1366x768.jpg" />
+				<div class="articlehead">
+					<div class="articletitle">Elections are Here</div>
+					<div class="articlesource">Capital FM, Kenya</div>
+					<div class="articlesubscribe">Subscribe</div>
+					<div class="articletime">1 hour ago</div>
+				</div>
+				<div class="articletext">people insist they want to see news text, finish reading this before they realise I said nothing. By they I mean you.
+									<br />people insist they want to see news text, finish reading this before they realise I said nothing. By they I mean you.
+									<br />people insist they want to see news text, finish reading this before they realise I said nothing. By they I mean you.
+									<br />people insist they want to see news text, finish reading this before they realise I said nothing. By they I mean you.
+									<br />people insist they want to see news text, finish reading this before they realise I said nothing. By they I mean you.</div>
+				<div class="articlereadmore">Read more</div>
+			</div>
+			*/
+
 function onedetail(myint){
-	$('#holdcats.container #one').html('<div id="one"></div><div id="col1"></div><div id="col2"></div><div id="col3"></div>');
+	$('#holdcats.container #hider').html(newsarticle[myint]);
+	$('#holdcats.container #one').html('<div class="articleparticular"><img /><div class="articlehead"></div><div class="articletext"></div><div class="articlereadmore">Read more</div></div>');
+	$('#holdcats.container #one .articleparticular img').attr( 'src', $('#holdcats.container #hider .article .articleimg img').attr('src'));
+	$('#holdcats.container #one .articleparticular .articlehead').html($('#holdcats.container #hider .article .articlehead').html());
+	$('#holdcats.container #one .articleparticular .articletext').html($('#holdcats.container #hider .article .articletext').html());
 }
 
 /*http://www.ghanaweb.com/GhanaHomePage/diaspora/artikel.php?ID=276141*/
-newsarticle[0] = '<div class="article">'+
+newsarticle[0] = '<div class="article" onclick="onedetail(0);">'+
 					'<div class="articleimg">'+
 						'<img src="assets/img/cats/art0.jpg" width="350px" />'+
 					'</div>'+
@@ -74,7 +95,7 @@ newsarticle[0] = '<div class="article">'+
 				'</div>';
 				
 /*http://www.news24.com/SouthAfrica/News/Zuma-We-created-a-better-life-for-all-20130606*/
-newsarticle[1] = '<div class="article">'+
+newsarticle[1] = '<div class="article" onclick="onedetail(1);">'+
 					'<div class="articleimg">'+
 						'<img src="assets/img/cats/art1.jpg" width="350px" />'+
 					'</div>'+
@@ -88,7 +109,7 @@ newsarticle[1] = '<div class="article">'+
 					'<div class="articlereadmore">Read more</div>'+
 				'</div>';
 				
-newsarticle[2] = '<div class="article">'+
+newsarticle[2] = '<div class="article" onclick="onedetail(2);">'+
 					'<div class="articleimg">'+
 						'<img src="assets/img/cats/samsung_galaxy_note___phone___tablet-wallpaper-1366x768.jpg" width="350px" />'+
 					'</div>'+
@@ -102,7 +123,7 @@ newsarticle[2] = '<div class="article">'+
 					'<div class="articlereadmore">Read more</div>'+
 				'</div>';
 
-newsarticle[3] = '<div class="article">'+
+newsarticle[3] = '<div class="article" onclick="onedetail(3);">'+
 					'<div class="articleimg">'+
 						'<img src="assets/img/cats/samsung_galaxy_note___phone___tablet-wallpaper-1366x768.jpg" width="350px" />'+
 					'</div>'+
@@ -117,7 +138,7 @@ newsarticle[3] = '<div class="article">'+
 				'</div>';
 				
 /*http://www.ghanaweb.com/GhanaHomePage/diaspora/artikel.php?ID=276141*/
-newsarticle[4] = '<div class="article">'+
+newsarticle[4] = '<div class="article" onclick="onedetail(4);">'+
 					'<div class="articleimg">'+
 						'<img src="assets/img/cats/art0.jpg" width="350px" />'+
 					'</div>'+
@@ -132,7 +153,7 @@ newsarticle[4] = '<div class="article">'+
 				'</div>';
 				
 /*http://www.news24.com/SouthAfrica/News/Zuma-We-created-a-better-life-for-all-20130606*/
-newsarticle[5] = '<div class="article">'+
+newsarticle[5] = '<div class="article" onclick="onedetail(5);">'+
 					'<div class="articleimg">'+
 						'<img src="assets/img/cats/art1.jpg" width="350px" />'+
 					'</div>'+
@@ -146,7 +167,7 @@ newsarticle[5] = '<div class="article">'+
 					'<div class="articlereadmore">Read more</div>'+
 				'</div>';
 				
-newsarticle[6] = '<div class="article">'+
+newsarticle[6] = '<div class="article" onclick="onedetail(6);">'+
 					'<div class="articleimg">'+
 						'<img src="assets/img/cats/samsung_galaxy_note___phone___tablet-wallpaper-1366x768.jpg" width="350px" />'+
 					'</div>'+
@@ -160,7 +181,7 @@ newsarticle[6] = '<div class="article">'+
 					'<div class="articlereadmore">Read more</div>'+
 				'</div>';
 
-newsarticle[7] = '<div class="article">'+
+newsarticle[7] = '<div class="article" onclick="onedetail(7);">'+
 					'<div class="articleimg">'+
 						'<img src="assets/img/cats/samsung_galaxy_note___phone___tablet-wallpaper-1366x768.jpg" width="350px" />'+
 					'</div>'+
@@ -175,7 +196,7 @@ newsarticle[7] = '<div class="article">'+
 				'</div>';
 				
 /*http://www.ghanaweb.com/GhanaHomePage/diaspora/artikel.php?ID=276141*/
-newsarticle[8] = '<div class="article">'+
+newsarticle[8] = '<div class="article" onclick="onedetail(8);">'+
 					'<div class="articleimg">'+
 						'<img src="assets/img/cats/art0.jpg" width="350px" />'+
 					'</div>'+
@@ -190,7 +211,7 @@ newsarticle[8] = '<div class="article">'+
 				'</div>';
 				
 /*http://www.news24.com/SouthAfrica/News/Zuma-We-created-a-better-life-for-all-20130606*/
-newsarticle[9] = '<div class="article">'+
+newsarticle[9] = '<div class="article" onclick="onedetail(9);">'+
 					'<div class="articleimg">'+
 						'<img src="assets/img/cats/art1.jpg" width="350px" />'+
 					'</div>'+
@@ -204,7 +225,7 @@ newsarticle[9] = '<div class="article">'+
 					'<div class="articlereadmore">Read more</div>'+
 				'</div>';
 				
-newsarticle[10] = '<div class="article">'+
+newsarticle[10] = '<div class="article" onclick="onedetail(10);">'+
 					'<div class="articleimg">'+
 						'<img src="assets/img/cats/samsung_galaxy_note___phone___tablet-wallpaper-1366x768.jpg" width="350px" />'+
 					'</div>'+
@@ -218,7 +239,7 @@ newsarticle[10] = '<div class="article">'+
 					'<div class="articlereadmore">Read more</div>'+
 				'</div>';
 
-newsarticle[11] = '<div class="article">'+
+newsarticle[11] = '<div class="article" onclick="onedetail(11);">'+
 					'<div class="articleimg">'+
 						'<img src="assets/img/cats/samsung_galaxy_note___phone___tablet-wallpaper-1366x768.jpg" width="350px" />'+
 					'</div>'+
@@ -233,7 +254,7 @@ newsarticle[11] = '<div class="article">'+
 				'</div>';
 				
 /*http://www.ghanaweb.com/GhanaHomePage/diaspora/artikel.php?ID=276141*/
-newsarticle[12] = '<div class="article">'+
+newsarticle[12] = '<div class="article" onclick="onedetail(12);">'+
 					'<div class="articleimg">'+
 						'<img src="assets/img/cats/art0.jpg" width="350px" />'+
 					'</div>'+
@@ -248,7 +269,7 @@ newsarticle[12] = '<div class="article">'+
 				'</div>';
 				
 /*http://www.news24.com/SouthAfrica/News/Zuma-We-created-a-better-life-for-all-20130606*/
-newsarticle[13] = '<div class="article">'+
+newsarticle[13] = '<div class="article" onclick="onedetail(13);">'+
 					'<div class="articleimg">'+
 						'<img src="assets/img/cats/art1.jpg" width="350px" />'+
 					'</div>'+
@@ -276,7 +297,7 @@ newsarticle[14] = '<div class="article">'+
 					'<div class="articlereadmore">Read more</div>'+
 				'</div>';
 
-newsarticle[15] = '<div class="article">'+
+newsarticle[15] = '<div class="article" onclick="onedetail(15);">'+
 					'<div class="articleimg">'+
 						'<img src="assets/img/cats/samsung_galaxy_note___phone___tablet-wallpaper-1366x768.jpg" width="350px" />'+
 					'</div>'+
@@ -291,7 +312,7 @@ newsarticle[15] = '<div class="article">'+
 				'</div>';
 				
 /*http://www.ghanaweb.com/GhanaHomePage/diaspora/artikel.php?ID=276141*/
-newsarticle[16] = '<div class="article">'+
+newsarticle[16] = '<div class="article" onclick="onedetail(16);">'+
 					'<div class="articleimg">'+
 						'<img src="assets/img/cats/art0.jpg" width="350px" />'+
 					'</div>'+
@@ -306,7 +327,7 @@ newsarticle[16] = '<div class="article">'+
 				'</div>';
 				
 /*http://www.news24.com/SouthAfrica/News/Zuma-We-created-a-better-life-for-all-20130606*/
-newsarticle[17] = '<div class="article">'+
+newsarticle[17] = '<div class="article" onclick="onedetail(17);">'+
 					'<div class="articleimg">'+
 						'<img src="assets/img/cats/art1.jpg" width="350px" />'+
 					'</div>'+
@@ -320,7 +341,7 @@ newsarticle[17] = '<div class="article">'+
 					'<div class="articlereadmore">Read more</div>'+
 				'</div>';
 				
-newsarticle[18] = '<div class="article">'+
+newsarticle[18] = '<div class="article" onclick="onedetail(18);">'+
 					'<div class="articleimg">'+
 						'<img src="assets/img/cats/samsung_galaxy_note___phone___tablet-wallpaper-1366x768.jpg" width="350px" />'+
 					'</div>'+
@@ -334,7 +355,7 @@ newsarticle[18] = '<div class="article">'+
 					'<div class="articlereadmore">Read more</div>'+
 				'</div>';
 
-newsarticle[19] = '<div class="article">'+
+newsarticle[19] = '<div class="article" onclick="onedetail(19);">'+
 					'<div class="articleimg">'+
 						'<img src="assets/img/cats/samsung_galaxy_note___phone___tablet-wallpaper-1366x768.jpg" width="350px" />'+
 					'</div>'+

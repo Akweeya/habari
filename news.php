@@ -5,7 +5,7 @@
 			<div></div>
 		</div>
 		<div id="toprib" class="mypan">
-			<div class="topribitem" onclick="getdashboard();">
+			<div class="topribitem" onclick="getdashboard();" style="width: 100%; font-weight: bold; font-size: 20px; padding: 5px; text-align: center; color: #FF9400;">
 				My dashboard
 			</div>
 		</div>
@@ -19,7 +19,7 @@
 				</div>
 			</div>
 			<div id="cats2" class="thumbnail cats" onclick="onedetail(2);">
-				<div class="catsimg" style="background-image: url('assets/img/cats/acorns-wallpaper-1366x768.jpg');">
+				<div class="catsimg" style="background-image: url('assets/img/cats/acorns-wallpaper-1366x768_4.jpg');">
 					<h1 title="Add" onclick="addCat(2)">+</h1>
 				</div>
 				<div class="catstext">
